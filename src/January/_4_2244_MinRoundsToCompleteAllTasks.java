@@ -9,7 +9,7 @@ import java.util.Map;
  * @Sir Darey
  * 
  * LeetCode Daily Challenge, January 2023
- * Day 4: Problem 2244 - Minimum Rounds to Complete All Tasksorted
+ * Day 4: Problem 2244 - Minimum Rounds to Complete All Tasks
  */
 
 public class _4_2244_MinRoundsToCompleteAllTasks {
