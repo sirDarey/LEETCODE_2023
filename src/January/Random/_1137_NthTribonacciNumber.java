@@ -4,10 +4,10 @@ package January.Random;
 *
 * @Sir Darey
 * 
-* LeetCode Problem 137 - N-th Tribonacci Number
+* LeetCode Problem 1137 - N-th Tribonacci Number
 */
 
-public class _137_NthTribonacciNumber {
+public class _1137_NthTribonacciNumber {
 	
 	public int tribonacci(int n) {
         if (n == 0)
