@@ -2,9 +2,10 @@ package February;
 
 /**
 *
-* @Sir Darey
-* 
-* LeetCode Problem 1071 - Greatest Common Divisor of Strings
+ @Sir Darey
+ * 
+ * LeetCode Daily Challenge, February 2023
+ * Day 1: Problem 1071 - Greatest Common Divisor of Strings 
 */
 
 public class _1_1071_GreatestCommonDivisorOfStrings {
