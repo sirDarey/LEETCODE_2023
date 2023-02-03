@@ -5,7 +5,7 @@ package February;
  @Sir Darey
  * 
  * LeetCode Daily Challenge, February 2023
- * Day 3: 6 - Zigzag Conversion
+ * Day 3: Problem 6 - Zigzag Conversion
 */
 
 public class _3_6_ZigzagConversion {
