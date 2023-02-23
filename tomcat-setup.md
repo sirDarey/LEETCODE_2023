@@ -1,25 +1,24 @@
-		
-		# HOW TO SET UP TOMCAT 10.*.* SERVER IN CENTOS7
 
+	#HOW TO SET UP TOMCAT 10. . SERVER IN CENTOS7
 		
 1. 	### PRE - INSTALLATION 
 
 	1.1 Login to your server with its root credentials
 	
-	1.2 `sudo su -`  -> To make sure you are at the root directory in case you're not
+	1.2 ```sudo su -```  To make sure you are at the root directory in case you're not
 	
-	1.3 `sudo dnf -y update`  -> To run a system update, so you can get the latest varsion of any file to be downloaded
+	1.3 ```sudo dnf -y update``` To run a system update, so you can get the latest varsion of any file to be downloaded
 	
-	1.4 `sudo reboot` -> To reboot the server for changes to take effect
+	1.4 ```sudo reboot```  To reboot the server for changes to take effect
 	
 
 2. ### JAVA 17 (Oracle JDK 17) INSTALLATION
 	
-	2.1 `wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm` -> To download Oracle Java JDK 17
+	2.1 ```wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm``` To download Oracle Java JDK 17
 	
-	2.2 `rpm -ivh jdk-17_linux-x64_bin.rpm` -> To install the downloaded  JDK 17
+	2.2 ```rpm -ivh jdk-17_linux-x64_bin.rpm``` To install the downloaded  JDK 17
 	
-	2.3 `java -version` -> To verify installation. You should get this output or something similar: 
+	2.3 ```java -version``` To verify installation. You should get this output or something similar: 
 		
 			```
 			java version "17.0.1" 2021-10-19 LTS
@@ -30,11 +29,11 @@
 
 3.  ### TOMCAT INSTALLATION
 
-	3.1 `sudo groupadd tomcat` -> To add Tomcat group
+	3.1 ```sudo groupadd tomcat``` To add Tomcat group
 	
-	3.2 `sudo mkdir /opt/tomcat` -> To create Installation Folder for TOMCAT
+	3.2 ```sudo mkdir /opt/tomcat```  To create Installation Folder for TOMCAT
 	
-	3.3 `sudo useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat` -> Create tomcat user, disable login and give rights
+	3.3 ```sudo useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat```  Create tomcat user, disable login and give rights
 	
 	3.4		``` 
 			sudo dnf install wget
@@ -206,7 +205,6 @@
 		Exit the INSERT mode
 
 	5.4  Stop and Restart Tomcat
-
 	
 		
 
