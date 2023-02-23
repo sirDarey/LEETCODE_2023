@@ -1,11 +1,14 @@
 
-	#HOW TO SET UP TOMCAT 10. . SERVER IN CENTOS7
+#HOW TO SET UP TOMCAT 10. . SERVER IN CENTOS7
 		
 1. 	### PRE - INSTALLATION 
 
 	1.1 Login to your server with its root credentials
 	
-	1.2 ```sudo su -```  To make sure you are at the root directory in case you're not
+	1.2 	```
+			sudo su -
+			```  
+		To make sure you are at the root directory in case you're not
 	
 	1.3 ```sudo dnf -y update``` To run a system update, so you can get the latest varsion of any file to be downloaded
 	
@@ -151,13 +154,13 @@
 
 	4.4 Comment out the *Valve* definition, as shown: 
 		```
-			<Context antiResourceLocking="false" privileged="true" >
-			  <CookieProcessor className="org.apache.tomcat.util.http.Rfc6265CookieProcessor"
-							   sameSiteCookies="strict" />
-			<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-						   allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
-			  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
-			</Context>
+		<Context antiResourceLocking="false" privileged="true" >
+		  <CookieProcessor className="org.apache.tomcat.util.http.Rfc6265CookieProcessor"
+						   sameSiteCookies="strict" />
+		<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+					   allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+		  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
+		</Context>
 		```
 		
 		Exit the INSERT mode 
