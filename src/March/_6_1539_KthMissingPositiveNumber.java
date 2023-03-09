@@ -27,6 +27,6 @@ public class _6_1539_KthMissingPositiveNumber {
         if (right == -1)
             return k;
         
-        return arr[right] + k - arr[right] + right+1;
+        return k + right + 1;
     }
 }
