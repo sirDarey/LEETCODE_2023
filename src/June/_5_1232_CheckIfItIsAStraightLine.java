@@ -4,7 +4,7 @@ package June;
  *
  * @Sir Darey
  * 
- * LeetCode Daily Challenge, January 2023
+ * LeetCode Daily Challenge, June 2023
  * Day 5: Problem 1232 - Check If It Is a Straight Line
  * 
  */
